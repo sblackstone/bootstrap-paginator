@@ -572,7 +572,7 @@
         bootstrapMajorVersion: 2,
         listContainerClass: "",
         itemContainerClass: function (type, page, current) {
-            return (page === current) ? "active" : "";
+            return (page === current && type === "page") ? "active" : "";
         },
         itemContentClass: function (type, page, current) {
             return "";
